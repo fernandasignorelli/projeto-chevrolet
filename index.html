@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-  </head>
-  <body>
- <navbar>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <navbar>
     <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
-      
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Sobre nós</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Trabalhe conosco</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Nossas unidades</a></li>
-          </ul>
-      
-          <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary d-inline-flex align-items-center gap-2">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Sobre nós</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Trabalhe conosco</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Nossas unidades</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle d-inline-flex align-items-center gap-2" type="button"
+              id="telefonesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
               <i class='bx bxs-phone' style="font-size: 1.25rem;"></i>
               <span>Telefones</span>
-              <i class='bx bx-chevron-down' style="font-size: 1.5rem;"></i>
             </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="telefonesDropdown">
+              <li><a class="dropdown-item" href="tel:+5511999999999">
+                  <i class='bx bxs-phone me-2'></i> (11) 2172-0300
+                </a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="tel:+5511888888888">
+                  <i class='bx bxs-phone me-2'></i> (11) 2172-0300
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
+    </div>
 
 
-      <!-- <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
-      
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Sobre nós</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Trabalhe conosco</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Nossas unidades</a></li>
-          </ul>
+    <!-- <div class="container">
       
           <div class="col-md-3 text-end">
             <div class="dropdown">
@@ -75,191 +80,217 @@
         </header> -->
 
 
- </navbar>
+  </navbar>
 
 
 
-    <header>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+  <header>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Item 1 -->
+        <div class="carousel-item active">
+          <img src="/img/carrossel__computador/carrossel1.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <!-- Adicione conteúdo aqui se necessário -->
             </div>
-            <div class="carousel-inner">
-                <!-- Item 1 -->
-                <div class="carousel-item active">
-                    <img src="/img/carrossel__computador/carrossel1.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Item 2 -->
-                <div class="carousel-item">
-                    <img src="/img/carrossel__computador/carrossel2.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Item 3 -->
-                <div class="carousel-item">
-                    <img src="/img/carrossel__computador/carrossel3.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Item 4 -->
-                <div class="carousel-item">
-                    <img src="/img/carrossel__computador/carrossel4.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Item 5 -->
-                <div class="carousel-item">
-                    <img src="/img/carrossel__computador/carrossel5.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="carousel-item">
-                    <img src="/img/carrossel__computador/carrossel6.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="carousel-item">
-                    <img src="/img/carrossel__computador/carrossel7.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 8 -->
-                <div class="carousel-item">
-                    <img src="/img/carrossel__computador/carrossel8.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Carro esportivo">        
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <!-- Adicione conteúdo aqui se necessário -->
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Adicione mais itens aqui se necessário -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </header>
-
-    <main>
-        <!-- Cards que contém os carros -->
-
-        <div class="text-center pt-5 pb-2">
-            <h2 class="fw-bold" style="color: #505050; ">EXISTE UM CHEVROLET PARA CADA MOMENTO DA SUA VIDA!</h2>
-            <div class="mx-auto border-bottom border-5" style="border-color: #B9862C !important; width:10rem;"></div>
           </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="carousel-item">
+          <img src="/img/carrossel__computador/carrossel2.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- Adicione conteúdo aqui se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="carousel-item">
+          <img src="/img/carrossel__computador/carrossel3.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- Adicione conteúdo aqui se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="carousel-item">
+          <img src="/img/carrossel__computador/carrossel4.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <!-- Adicione conteúdo aqui se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="carousel-item">
+          <img src="/img/carrossel__computador/carrossel5.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <!-- Adicione conteúdo aqui se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="carousel-item">
+          <img src="/img/carrossel__computador/carrossel6.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <!-- Adicione conteúdo aqui se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="carousel-item">
+          <img src="/img/carrossel__computador/carrossel7.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <!-- Adicione conteúdo aqui se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="carousel-item">
+          <img src="/img/carrossel__computador/carrossel8.png" class="d-block w-100 h-100" style="object-fit: cover;"
+            alt="Carro esportivo">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <!-- Adicione conteúdo aqui se necessário -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Adicione mais itens aqui se necessário -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cards que contém os carros -->
+
+    <div class="text-center pt-5 pb-2">
+      <h2 class="fw-bold" style="color: #505050; ">EXISTE UM CHEVROLET PARA CADA MOMENTO DA SUA VIDA!</h2>
+      <div class="mx-auto border-bottom border-5" style="border-color: #B9862C !important; width:10rem;"></div>
+    </div>
 
     <div class="album py-5">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-            <div class="col">
-              <div class="card shadow-sm h-100 transition-all">
-                <div class="overflow-hidden">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#D7D7D7"/>
-                    <image href="/img/carro.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%" y="10%"/>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+          <div class="col">
+            <div class="card shadow-sm h-100 transition-all">
+              <div class="overflow-hidden">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#D7D7D7" />
+                  <image href="/img/carro.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%"
+                    y="10%" />
                 </svg>
-            </div>
-                <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
-                  <p class="card-text text-center text-white fs-4 fw-bold">CARROS</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
+              </div>
+              <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
+                <p class="card-text text-center text-white fs-4 fw-bold">CARROS</p>
+                <div class="d-flex justify-content-between align-items-center">
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <div class="card shadow-sm h-100 transition-all">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#D7D7D7"/>
-                    <image href="/img/pickup.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%" y="10%"/>
-                </svg>
-                <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
-                  <p class="card-text text-center text-white fs-4 fw-bold">PICKUP'S</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
+          <div class="col">
+            <div class="card shadow-sm h-100 transition-all">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#D7D7D7" />
+                <image href="/img/pickup.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%"
+                  y="10%" />
+              </svg>
+              <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
+                <p class="card-text text-center text-white fs-4 fw-bold">PICKUP'S</p>
+                <div class="d-flex justify-content-between align-items-center">
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <div class="card shadow-sm h-100 transition-all">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#D7D7D7"/>
-                    <image href="/img/suv.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%" y="10%"/>
-                </svg>
-    
-                <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
-                  <p class="card-text text-center text-white fs-4 fw-bold">SUV’s & CROSSOVERS</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col">
+            <div class="card shadow-sm h-100 transition-all">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#D7D7D7" />
+                <image href="/img/suv.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%"
+                  y="10%" />
+              </svg>
 
-            <div class="col">
-              <div class="card shadow-sm h-100 transition-all">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#D7D7D7"/>
-                    <image href="/img/eletrico.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%" y="10%"/>
-                </svg>
-    
-                <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
-                  <p class="card-text text-center text-white fs-4 fw-bold">ELÉTRICOS</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
+              <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
+                <p class="card-text text-center text-white fs-4 fw-bold">SUV’s & CROSSOVERS</p>
+                <div class="d-flex justify-content-between align-items-center">
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100 transition-all">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#D7D7D7" />
+                <image href="/img/eletrico.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%"
+                  y="10%" />
+              </svg>
+
+              <div class="card-body" style="background-color: #B9862C; border-radius: 0px 0px 5px 5px;">
+                <p class="card-text text-center text-white fs-4 fw-bold">ELÉTRICOS</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
-        
-    <article>
-        <img src="/img/servicosEspecializados.png" alt="">
+  </main>
 
-    </article>
-        <!-- mais cards -->
-            <!-- <div class="album py-4">
+  <article>
+    <img src="/img/servicosEspecializados.png" alt="">
+
+  </article>
+  <!-- mais cards -->
+  <!-- <div class="album py-4">
                 <div class="container">
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
@@ -278,15 +309,14 @@
                     </div>
                 </div>
             </div> -->
-   
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-  </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
 </html>
