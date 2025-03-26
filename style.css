@@ -1,18 +1,28 @@
-/* animação dos cards onde contém os carros */
-.transition-all {
-    transition: all 0.3s ease;
-  }
-  
-  .bg-opacity-75-hover:hover {
-    opacity: 0.9;
-  }
-  
-  .transition-all:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* removendo a borda que há ao redor do card */
-  .card{
-    border: none !important;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+
+:root {
+  --primary-dark: #140D37;
+  --primary-gold: #B9862C;
+  --gray-medium: #505050;
+  --gray-light: #D7D7D7;
+}
+
+.custom-button-bg {
+  border: 2px solid var(--primary-dark) !important; /* Cor da borda */
+  background-color: transparent; /* Fundo transparente */
+  color: #140D37; /* Cor do texto */
+  transition: all 0.3s ease;
+}
+
+/* Mostrar hamburguer em tablets (768px - 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}

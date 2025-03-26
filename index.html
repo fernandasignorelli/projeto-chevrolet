@@ -2,87 +2,98 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!DOCTYPE html>
+  <html lang="pt-BR">
 
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Concessionária Chevrolet - Veículos novos, seminovos e serviços especializados">
+    <title>Concessionária Chevrolet | Modelos, Ofertas e Serviços</title>
 
-</head>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
 
 <body>
-  <navbar>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
     <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-            <use xlink:href="#bootstrap" />
-          </svg>
-        </a>
+      <a class="navbar-brand" href="#">
+        <img src="/img/logosChevrolet/logoCinza.png" alt="Logo Chevrolet" width="120">
+      </a>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Sobre nós</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Trabalhe conosco</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Nossas unidades</a></li>
+      <!-- Menu Hamburguer para mobile e tablet -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Itens do Menu Centralizado -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-5 text-center">
+          <li class="nav-item"><a class="nav-link fw-semibold fs-5 text-dark" href="#">Sobre nós</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold fs-5 text-dark" href="#">Trabalhe Conosco</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold fs-5 text-dark" href="#">Nossas Unidades</a></li>
         </ul>
+      </div>
 
-        <div class="col-md-3 text-end">
-          <div class="dropdown">
-            <button class="btn btn-outline-primary dropdown-toggle d-inline-flex align-items-center gap-2" type="button"
-              id="telefonesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class='bx bxs-phone' style="font-size: 1.25rem;"></i>
-              <span>Telefones</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="telefonesDropdown">
-              <li><a class="dropdown-item" href="tel:+5511999999999">
-                  <i class='bx bxs-phone me-2'></i> (11) 2172-0300
-                </a></li>
-              <hr class="dropdown-divider">
-              <li><a class="dropdown-item" href="tel:+5511888888888">
-                  <i class='bx bxs-phone me-2'></i> (11) 2172-0300
-                </a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-            </ul>
-          </div>
+      <!-- Telefones e Redes Sociais -->
+      <div class="d-flex align-items-center">
+        <div class="dropdown me-3">
+          <button class="btn dropdown-toggle rounded-pill d-inline-flex align-items-center gap-2 custom-button-bg"
+            type="button" id="telefonesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class='bx bxs-phone' style="font-size: 1.25rem; "></i>
+            <span class="fw-bold">Telefones</span>
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu" aria-labelledby="telefonesDropdown">
+            <li><a class="dropdown-item" href="tel:+551121720300"> <span class="d-flex fw-bold"> LOJA SÃO CAETANO DO
+                  SUL</span>
+                (11) 2172-0300
+              </a></li>
+            <li class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="tel:+551121720300"> <span class="d-flex fw-bold">LOJA CERÂMICA</span>
+                (11) 2172-0300
+              </a></li>
+            <li class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="tel:+551155910150"> <span class="d-flex fw-bold">LOJA JABAQUARA</span>
+                (11) 5591-0150
+              </a></li>
+            <li class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="tel:+551125718700"> <span class="d-flex fw-bold">LOJA SÃO MIGUEL</span>
+                (11) 2571-8700
+              </a></li>
+          </ul>
         </div>
-      </header>
+
+        <!-- Ícones de Redes Sociais -->
+        <div class="social-icons">
+          <a href="#" class="text-dark me-2" aria-label="Instagram"><i class="bx bxl-instagram fs-2"></i></a>
+          <a href="#" class="text-dark me-2" aria-label="Facebook"><i class="bx bxl-facebook fs-2"></i></a>
+          <a href="#" class="text-dark me-2" aria-label="LinkedIn"><i class="bx bxl-linkedin fs-2"></i></a>
+        </div>
+      </div>
     </div>
-
-
-    <!-- <div class="container">
-      
-          <div class="col-md-3 text-end">
-            <div class="dropdown">
-              <button class="btn btn-outline-primary dropdown-toggle d-inline-flex align-items-center gap-2" type="button" id="telefonesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class='bx bxs-phone' style="font-size: 1.25rem;"></i>
-                <span>Telefones</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="telefonesDropdown">
-                <li><a class="dropdown-item" href="tel:+5511999999999">
-                  <i class='bx bxs-phone me-2'></i> (11) 99999-9999
-                </a></li>
-                <li><a class="dropdown-item" href="tel:+5511888888888">
-                  <i class='bx bxs-phone me-2'></i> (11) 88888-8888
-                </a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">
-                  <i class='bx bxs-time me-2'></i> Horário: 8h às 18h
-                </a></li>
-              </ul>
-            </div>
-          </div>
-        </header> -->
-
-
-  </navbar>
-
-
+  </nav>
+  <nav class="navbar navbar-expand" style="background-color: #140D37; min-height: 3rem;">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+      <ul class="navbar-nav gap-5">
+        <li class="nav-item"><a
+            class="nav-link fs-5 fw-semibold text-white d-flex justify-content-center align-items-center gap-2"
+            href="#">Modelos <i class="bx bx-chevron-down fs-3"></i></a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-white" href="#">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-white" href="#">Seminovos</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-white" href="#">Agendar serviço</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 fw-semibold text-white" href="#">Vendas diretas</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <header>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -188,22 +199,31 @@
 
         <!-- Adicione mais itens aqui se necessário -->
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+      <!-- botoes de prosseguir e voltar do carrossel -->
+      <div class="custom-button">
+        <button class="custom-bg-button carousel-control-prev" type="button" data-bs-target="#myCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" style="background-color: #B9862C; padding: 25px; border-radius: 10%;"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="custom-bg-button carousel-control-next" type="button" data-bs-target="#myCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" style="background-color: #B9862C; padding: 25px; border-radius: 10%;"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+    <div class="mx-auto border-bottom border-5" style="border-color: #B9862C !important;"></div>
   </header>
 
   <main>
-    <!-- Cards que contém os carros -->
 
+    <!-- Cards que contém os carros -->
     <div class="text-center pt-5 pb-2">
-      <h2 class="fw-bold" style="color: #505050; ">EXISTE UM CHEVROLET PARA CADA MOMENTO DA SUA VIDA!</h2>
+      <h2 class="fw-bold" style="color: #505050; ">EXISTE UM PARA CADA MOMENTO DA SUA VIDA!</h2>
       <div class="mx-auto border-bottom border-5" style="border-color: #B9862C !important; width:10rem;"></div>
     </div>
 
@@ -289,26 +309,6 @@
     <img src="/img/servicosEspecializados.png" alt="">
 
   </article>
-  <!-- mais cards -->
-  <!-- <div class="album py-4">
-                <div class="container">
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <div class="overflow-hidden">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#D7D7D7"/>
-                            <image href="/img/carro.png" width="80%" height="80%" preserveAspectRatio="xMidYMid meet" x="10%" y="10%"/>
-                        </svg>
-                        <div class="card-body" >
-                          <p class="card-text fs-4 fw-bold" style="color: #3A3A3A;">Ofertas em destaque</p>
-                          <hr>
-                          <p style="color:#525252;">As melhores ofertas e as condições especiais que a Primarca tem para você. Consulte o nosso estoque e encontre o carro que é a sua cara.
-                        </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
